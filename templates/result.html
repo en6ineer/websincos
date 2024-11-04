@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты обработки</title>
+</head>
+<body>
+    <h1>Результаты обработки изображения</h1>
+    <h2>Обработанное изображение:</h2>
+    <img src="{{ url_for('static', filename='uploads/' + new_image.split('/')[-1]) }}" alt="Processed Image">
+    <h2>График распределения цветов:</h2>
+    <img src="{{ url_for('static', filename='uploads/' + graph.split('/')[-1]) }}" alt="Color Distribution">
+    <br>
+    <a href="/">Вернуться назад</a>
+</body>
+</html>

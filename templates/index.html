@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing</title>
+</head>
+<body>
+    <h1>Обработка изображения с помощью Sin/Cos</h1>
+    <form action="/process" method="post" enctype="multipart/form-data">
+        <label for="image">Загрузите изображение:</label>
+        <input type="file" name="image" required><br><br>
+
+        <label for="period">Период:</label>
+        <input type="number" name="period" step="0.1" required><br><br>
+
+        <label for="function_type">Функция:</label>
+        <select name="function_type">
+            <option value="sin">Sin</option>
+            <option value="cos">Cos</option>
+        </select><br><br>
+
+        <label for="direction">Направление:</label>
+        <select name="direction">
+            <option value="horizontal">Горизонтальное</option>
+            <option value="vertical">Вертикальное</option>
+        </select><br><br>
+
+        <input type="submit" value="Обработать изображение">
+    </form>
+</body>
+</html>
